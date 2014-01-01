@@ -22,6 +22,11 @@ class tt(unittest.TestCase):
         # self.assertEqual(self.seq, range(10))
         # self.assertTrue(element in self.seq)
         # self.assertRaises(TypeError, random.shuffle, (1,2,3))
+        # self.assertListEqual(......)
+        #
+        # ...
+        #
+        # 等很多斷言測試...
 
 #
 # 執行測試, 估計會執行 dir() 類似的指令內容估計是查尋有哪些執行 test Function
