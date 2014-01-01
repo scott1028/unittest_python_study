@@ -17,6 +17,7 @@ class tt(unittest.TestCase):
     # 所有測試都必須以 Test.* 命名開始, 之後調用 .main() 會自動執行
     def test_aa(self):
         print 123
+        raise Exception('test_aa error')
 
         # 可以使用各種斷言來測試！
         # self.assertEqual(self.seq, range(10))
@@ -27,6 +28,11 @@ class tt(unittest.TestCase):
         # ...
         #
         # 等很多斷言測試...
+
+    # 使用測試套件當前一個測試方法產生錯誤並不會讓程式立即停止，可以讓下一個方法順利執行繼續測試！
+    def test_bb(self):
+        print 'abc'
+        raise Exception('test_bb error')
 
 #
 # 執行測試, 估計會執行 dir() 類似的指令內容估計是查尋有哪些執行 test Function
